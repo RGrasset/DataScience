@@ -1,0 +1,54 @@
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R est un logiciel libre livré sans AUCUNE GARANTIE.
+Vous pouvez le redistribuer sous certaines conditions.
+Tapez 'license()' ou 'licence()' pour plus de détails.
+
+R est un projet collaboratif avec de nombreux contributeurs.
+Tapez 'contributors()' pour plus d'information et
+'citation()' pour la façon de le citer dans les publications.
+
+Tapez 'demo()' pour des démonstrations, 'help()' pour l'aide
+en ligne ou 'help.start()' pour obtenir l'aide au format HTML.
+Tapez 'q()' pour quitter R.
+
+[R.app GUI 1.70 (7507) x86_64-apple-darwin15.6.0]
+
+[Historique recherché depuis /Users/Romain/.Rapp.history]
+
+> getwd()
+[1] "/Users/Romain"
+> setwd("/Users/Romain/Data/RProgramming")
+objc[703]: Class FIFinderSyncExtensionHost is implemented in both /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit (0x7fffad699b68) and /System/Library/PrivateFrameworks/FileProvider.framework/OverrideBundles/FinderSyncCollaborationFileProviderOverride.bundle/Contents/MacOS/FinderSyncCollaborationFileProviderOverride (0x113187cd8). One of the two will be used. Which one is undefined.
+> myfuncton <- function(y){
++ 	y <- rnorm(100)
++ 	mean(y)
++ }
+> dir()
+[1] "myfunction.R"
+> source("myfunction.R")
+> myfunction()
+[1] 0.0001851687
+> source("myfunction.R")
+> second()
+Error in second() : 
+  l'argument "x" est manquant, avec aucune valeur par défaut
+> second(4)
+Error in lengh(x) : impossible de trouver la fonction "lengh"
+> source("myfunction.R")
+> 
+> second()
+Error in second() : 
+  l'argument "x" est manquant, avec aucune valeur par défaut
+> second
+function(x){
+	x + rnorm(length(x))
+}
+> second(4)
+[1] 5.066537
+> second(4:10)
+[1] 3.074530 5.082701 6.520741 5.549288 7.505227 8.883433 8.944768
+> 
